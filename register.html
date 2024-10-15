@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
+    <title>Registration || Blood Doners</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
     <link rel="stylesheet" href="assets/plugins/grid-gallery/css/grid-gallery.min.css">
@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <h2>Registration || Blood Doners</h2>
+        <h2>Registration</h2>
         <form action="registerr.php" method="post" id="signupForm">
             <div class="form-group">
                 <label for="username">Name</label>
@@ -52,12 +52,12 @@
             </div>
             <button type="submit" onclick="validate(event)" class="btn btn-danger w-75" style="margin-left: 2rem !important;" name="uploaded">Register</button>
         </form>
-        <div id="popup" style="display: none;">
-            <div class="popup-content">
+        <div id="popup">
+            <div class="popup-content row flex-column align-items-center">
+                <img class="ml-auto" id="close-popup" onclick="closePopup()" src="./assets/images/register/close.svg" alt="">
                 <img src="./assets/images/register/sccess.svg" width="100" alt="">
                 <h2>Registration Completed!</h2>
                 <p>Thank you for registration. More information will be provided through email and SMS.</p>
-                <img id="close-popup" onclick="closePopup()" src="./assets/images/register/close.svg" alt="">
             </div>
         </div>
     </div>

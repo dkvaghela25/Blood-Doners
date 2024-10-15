@@ -52,7 +52,7 @@ function validate() {
 
     // If the form is valid, redirect to campaigns.html
     if (isValid) {
-        document.getElementById("popup").style.display = "block";
+        document.getElementById("popup").style.display = "flex";
     }
     
     event.preventDefault();
